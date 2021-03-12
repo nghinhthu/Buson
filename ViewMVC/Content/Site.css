@@ -1,0 +1,633 @@
+﻿body {
+    /*padding-top: 50px;
+    padding-bottom: 20px;*/
+    cursor: default;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    /*padding-left: 15px;
+    padding-right: 15px;*/
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.navbar{
+    min-height: 80px;
+    font-family: var(--font-ponppins);
+}
+
+.nav-container{
+    padding: 0px !important;
+}
+
+.navbar-brand {
+    color: #002d5b;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+}
+
+.navbar a {
+    padding-left: 20%;
+    color: var(--color-pink);
+}
+
+#navbarNav ul li{
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+
+#navbarNav ul li a {
+    color: var(--color-blue);
+    font-weight: 500;
+}
+
+#navbarNav ul li a:hover {
+    color: var(--color-pink);
+    transition: all .3s ease-out 0s;
+}
+
+.collapse li {
+    padding: 0px 50px;
+    color: #002d5b;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+@media only screen and (min-width: 992px){
+    .carousel-banner-item {
+        padding-top: 15%;
+        padding-left: 15%;
+    }
+}
+@media only screen and (max-width: 991px) {
+    .carousel-banner-item .button-service .border-btn {
+        padding: 10px 30px;
+    }
+    .carousel-banner-item{
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+    .carousel-banner-item h1 {
+        font-size: 6vw;
+    }
+}
+
+.carousel-banner-item {
+    position: absolute;
+    /*padding-top: 10%;
+    padding-left: 10%;*/
+    /*max-width: 60vw;
+    max-height: 20vh;*/
+}
+
+.carousel-banner-item .button-service{
+    padding-top: 0px;
+}
+
+.carousel-banner-item .button-service .border-btn:hover {
+    background-color: var(--color-pink);
+    color: white;
+}
+
+.carousel-banner-item p {
+    color: var(--color-pink);
+    /*font-size: 25px;*/
+    font-size: 2vh 3vw;
+}
+
+.carousel-banner-item h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    color: #002d5b;
+}
+
+.main-container {
+    max-width: 100%;
+    width: 100vw;
+    margin: 0px;
+}
+
+.trust, .complete-case, .service, .quote, .news{
+    width: 80vw;
+    margin: 0 auto;
+
+}
+
+.nav-link {
+    color: #002d5b;
+}
+
+.profile {
+    background-color: #f6f9fe;
+    font-family: var(--font-ponppins);
+    /*height: 600px;*/
+}
+
+.card-profile {
+    margin: 100px 15px;
+}
+
+.card-profile h4{
+    padding-top: 20px;
+}
+
+.card-profile p {
+    color: #506172;
+    font-size: 16px;
+    line-height: 30px;
+    padding-top: 10px;
+}
+
+.card-title{
+    font-family: 'Poppins',sans-serif;
+    font-weight: 700;
+}
+
+.card-profile h2 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.card-content{
+    margin: 20px 30px 0;
+}
+
+#card-border {
+    border: solid 4px var(--color-pink);
+    background-color: white;
+    padding: 20px;
+}
+
+#card-border h2{
+    font-weight: 900;
+}
+
+.trust {
+    padding-top: 200px;
+    /*display: inline-block;*/
+}
+
+.align-items-end {
+    align-items: flex-end !important;
+}
+
+.trust-image img{
+    width: 100%;
+}
+
+@media (max-width: 767px){
+    .trust-image img{
+        margin-bottom: 30px;
+    }
+}
+
+.trust-caption {
+    /*position: absolute;*/
+    background: rgba(255,255,255,0.8);
+    padding: 57px 115px 50px 60px;
+    margin-left: -152px;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .trust-caption{
+        padding: 10px 5px 30px 30px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .trust-caption{
+        padding: 30px;
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 767px){
+    .trust-caption{
+        padding: 0px;
+        margin-left: 0px;
+    }
+}
+
+.trust-caption h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800
+}
+
+.trust-caption p {
+    font-family: 'Poppins', sans-serif;
+    line-height: 30px;
+    color: #506172;
+    font-size: 16px;
+}
+
+.service{
+    padding-top: 200px;
+}
+
+.service h1{
+    text-align: center;
+    font-family: var(--font-ponppins);
+    font-weight: 900;
+}
+
+.card-service {
+    padding-top: 50px;
+}
+
+.card-service-item {
+    background-color: #fcfdff;
+}
+
+.card-service :hover {
+    background-color: var(--color-lightblue);
+}
+
+.card-service-caption h4 {
+    text-align: center;
+    padding: 20px;
+}
+
+.card-service-caption p {
+    font-family: var(--font-ponppins);
+    max-width: 300px;
+    text-align: center;
+    padding: 20px;
+    margin: auto;
+    line-height: 25px;
+    color: #506172;
+}
+
+.card-service-icon {
+    font-size: 50px;
+    text-align: center;
+    padding: 30px;
+}
+
+.card-service-icon :hover {
+    color: var(--color-pink);
+}
+
+.btn-outline-danger{
+    color: var(--color-pink) !important;
+}
+
+.btn-outline-danger{
+    color: var(--color-pink) !important;
+}
+
+.button-service{
+    padding-top: 50px;
+}
+
+.button-service :hover {
+    background-color: var(--color-pink);
+    color: white;
+}
+
+.border-btn{
+    border: solid 2px var(--color-pink);
+    padding: 18px 38px;
+    font-family: var(--font-ponppins);
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--color-pink);
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.complete-case {
+    background-color: var(--color-lightblue);
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.container-fluid{
+    padding: 50px;
+}
+
+.case-left{
+    padding-top: 30%;
+}
+
+.case-left h3{
+    color: var(--color-blue);
+    font-family: var(--font-ponppins);
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 20px;
+    padding-right: 30px;
+}
+
+.case-right .carousel .carousel-inner .carousel-item img{
+    width: 100%;
+}
+
+.case-left p {
+    font-family: var(--font-ponppins);
+}
+
+.quote{
+    padding-top: 100px;
+}
+
+.quote-image{
+    
+}
+
+.quote-image img {
+    display: block;
+    margin: 15px auto;
+    border: 3px dashed transparent;
+    border-radius: 50%;
+}
+
+/*.quote-caption{
+    padding: 50px 300px;
+}*/
+
+@media only screen and (min-width: 992px) {
+    .quote-caption p {
+        padding: 50px 150px;
+    }
+}
+
+.quote-caption p {
+    font-family: var(--font-ponppins);
+    font-size: 25px;
+    color: #191d34;
+    margin-bottom: 40px;
+    /*padding: 50px 150px;*/
+    line-height: 45px;
+}
+
+.quote-rate{
+    margin-bottom: 40px;
+}
+
+.quote-rate i {
+    display: inline-block;
+    color: #FBBA42;
+}
+
+.rating-caption span {
+    font-size: 18px;
+    font-weight: 400;
+    color: #112e41;
+    text-transform: uppercase;
+}
+
+.rating-caption span span {
+    color: #767676;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+#quote-control-button{
+    color: black;
+    border-radius: 50%;
+}
+
+#carouselExampleControls1:hover #quote-control-button {
+    color: white;
+    background-color: var(--color-pink);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 14px;
+    transform: translateY(-50%);
+    transition: .4s;
+    /*z-index: 2;
+    opacity: 1;
+    visibility: visible;
+    border: 0;*/
+}
+
+#carouselExampleControls1:hover .quote-image img {
+    /*animation: 1.3s cubic-bezier(0.8, 0, 0, 1) 0s normal none infinite running pulse;*/
+    box-shadow: 0px 0px 12px 8px rgba(216, 10, 10, 0.3);
+    /*animation-duration: 1.3s;
+    animation-timing-function: cubic-bezier(0.8, 0, 0, 1);
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: pulse;*/
+}
+
+.news{
+    font-family: var(--font-ponppins);
+    padding-top: 200px;
+    margin-bottom: 200px;
+}
+
+.news h2 {
+    color: #191d34;
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 95px;
+}
+
+.card-news {
+    background-color: #fcfdff;
+    border: none;
+}
+
+.card-news:hover{
+    background-color: var(--color-lightblue);
+}
+
+.card-news-img{
+    overflow: hidden;
+}
+
+.card-news-img img {
+    width: 100%;
+    transform: scale(1);
+    transition: all .5s ease-out 0s;
+}
+.card-news:hover img {
+    transform: scale(1.1);
+}
+
+.card-news .card-type{
+    color: var(--color-pink);
+}
+
+.card-news .card-text {
+    color: #aebccb;
+}
+
+.card-news .card-title:hover {
+    color: var(--color-pink);
+}
+
+.contact {
+    margin-top: 300px 0;
+    padding: 100px 0;
+    background-color: #002d5b;
+    font-family: var(--font-ponppins);
+    color: white;
+}
+
+/*.contact-container{
+    padding: 100px 150px;
+}*/
+
+.contact-left{
+    padding: 35px;
+}
+
+.contact-left h2{
+    font-weight: 900;
+}
+
+.contact-left p{
+    padding-top: 30px;
+    line-height: 30px;
+}
+
+.contact-right{
+    padding: 50px;
+}
+
+.form-box input, .form-select {
+    background-image: initial;
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-repeat: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: transparent;
+    color: #718eab;
+    border: 2px solid #295684;
+    border-radius: 5px;
+}
+
+.form-box input[type=text]:focus {
+    background-color: transparent;
+    color: #718eab;
+}
+
+.button-contact .border-btn {
+    height: 50px;
+    padding-top: 12px;
+    border: solid 2px var(--color-pink);
+    font-family: var(--font-ponppins);
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--color-pink);
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.button-contact:hover .border-btn {
+    background-color: var(--color-pink);
+    color: white;
+}
+
+footer {
+    background-color: #f8fafe;
+    margin-top: 0;
+    padding: 150px 0;
+    font-family: var(--font-ponppins);
+}
+
+.footer-logo{
+    margin-bottom: 50px;
+}
+
+.footer-caption {
+    color: #868c98;
+    padding-right: 125px;
+    font-size: 16px;
+    margin-bottom: 50px;
+    line-height: 1.8;
+}
+
+.footer-icon{
+    font-size: 20px;
+}
+
+.footer-icon i {
+    margin-right: 15px;
+}
+
+.footer-icon i:hover {
+    transition-property: all;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-out;
+    transition-delay: 0s;
+    color: var(--color-pink);
+    box-shadow: 0 -3px 0 0 rgba(24, 24, 24, 0.015) inset, 0 3px 10px rgba(0, 0, 0, 0.3);
+    -webkit-transform: translateY(-3px);
+    -moz-transform: translateY(-3px);
+    -ms-transform: translateY(-3px);
+    transform: translateY(-3px);
+}
+
+.footer-item h4 {
+    margin-bottom: 30px;
+    text-transform: capitalize;
+    color: #012f5f;
+    font-weight: 600;
+}
+
+.footer-item ul{
+    padding-left: 0px;
+}
+
+.footer-item ul li{
+    list-style: none;
+    padding-bottom: 15px;
+}
+
+.footer-item ul li a {
+    text-decoration: none;
+    color: #868c98;
+}
+
+.footer-item ul li:hover a {
+    transition: all .3s ease-out 0s;
+    color: var(--color-pink);
+    padding-left: 5px;
+}
+
+
+
+
+:root {
+    --font-ponppins: 'Poppins', sans-serif;
+    --color-pink: #ff656a;
+    --color-blue: #002d5b;
+    --color-lightblue: #f8fafe;
+}
